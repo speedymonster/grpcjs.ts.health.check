@@ -1,4 +1,4 @@
-# gRPC Health Check
+# gRPC Js Health Check
 
 [![License][license-image]][license-url]
 [![Current Version](https://img.shields.io/npm/v/grpc-ts-health-check.svg)](https://www.npmjs.com/package/grpc-ts-health-check)
@@ -8,9 +8,9 @@
 [license-url]: https://opensource.org/licenses/MIT
 [license-image]: https://img.shields.io/npm/l/make-coverage-badge.svg
 
-An implementation of gRPC health checks, written in typescript.
+An implementation of gRPC Js health checks, written in typescript.
 
-It is assumed that you are using the `grpc` library.
+It is assumed that you are using the `grpc-js` library.
 
 ### Installation
 
@@ -18,7 +18,7 @@ It is assumed that you are using the `grpc` library.
 npm install grpc-ts-health-check --save
 ```
 
-Install the `grpc` library:
+Install the `grpc-js` library:
 
 ```
 npm install grpc --save
@@ -73,7 +73,7 @@ healthClient.check(request, (error: Error | null, response: HealthCheckResponse)
 ## Example
 
 ```typescript
-import * as grpc from 'grpc';
+import * as grpc from '@grpc/grpc-js';
 import { GrpcHealthCheck, HealthCheckResponse, HealthService } from 'grpc-ts-health-check';
 
 const serviceName = 'auth.Authenticator';
