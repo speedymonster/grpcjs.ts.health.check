@@ -21,7 +21,7 @@ npm install grpc-ts-health-check --save
 Install the `grpc-js` library:
 
 ```
-npm install grpc --save
+npm install @grpc/grpc-js --save
 ```
 
 ### Dependencies
