@@ -5,7 +5,7 @@ import { HealthCheckRequest, HealthCheckResponse } from './src/proto/health_pb';
 
 declare class GrpcHealthCheck implements IHealthServer {
 	constructor(statusMap: { [key: string]: number });
-	private setStatus(service: string, status: HealthCheckResponse.ServingStatus): void;
+	setStatus(service: string, status: HealthCheckResponse.ServingStatus): void;
 	private sendStatusResponse(
 		call: grpc.ServerWriteableStream<HealthCheckRequest>,
 		status: HealthCheckResponse.ServingStatus,
